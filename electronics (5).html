@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main_body">
+    <!--this is the header-->
+
+    <header>
+      <img
+        class="logo_image"
+        src="images/shopping-logo-design-template-6bc88430ababccbb7cdca0addfc44748_screen.jpg"
+        alt="logo"
+      />
+      <h1>Green Store</h1>
+    </header>
+
+    <!--this is the navbar-->
+
+    <nav>
+      <div>
+        <a href="main.html">
+          <button type="button" id="main">Main</button>
+        </a>
+
+        <a href="clothing.html">
+          <button type="button" id="clothing">Clothing</button>
+        </a>
+
+        <a href="books.html">
+          <button type="button" id="books">Books</button>
+        </a>
+      </div>
+
+      <button type="button" id="shopping_card_btn">🛒 shopping Cart</button>
+    </nav>
+
+    <!--this is the main-->
+
+    <main class="products_main">
+      <article class="products">
+        <h2 style="color: rgb(255, 255, 255)">Electronics</h2>
+
+        <article class="product_card">
+          <img src="images/th.webp" alt="" />
+          <div>
+            <h3 class="name">IPhone 17 Pro Max</h3>
+            <p>
+              A sleek titanium masterpiece featuring a pro-grade quad-camera and
+              a stunning edge-to-edge display. Built for elite performance and
+              ultimate style.
+            </p>
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">440000</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product_card">
+          <img src="images/Samsung-UHD-UE40MU6100.jpg" alt="" />
+          <div>
+            <h3 class="name">Samsung UHD MU6100</h3>
+            <p>
+              The Samsung MU6100 4K UHD Smart TV features a 4K UHD display equipped 
+              with HDR technology that enhances colors and contrast for a more realistic viewing experience. 
+              It runs on the smart Tizen operating system, providing quick access to apps like Netflix and YouTube,
+              and boasts a sleek, modern design that fits seamlessly into any space.
+              
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">134800</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input type="number" value="1" min="1" class="countity" />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product_card">
+          <img src="images/OIP (6).webp" alt="" />
+          <div>
+            <h3 class="name">Smart Front-Load Washer</h3>
+            <p>
+              A sleek, high-tech washing machine featuring a digital display and
+              vibrant LED lighting. It offers modern styling and efficient
+              cleaning performance in a compact, futuristic design.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">6500</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product_card">
+          <img src="images/OIP (5).webp" alt="" />
+
+          <div>
+            <h3 class="name">Smart Front-Load Washer</h3>
+            <p>
+              A sleek, high-tech washing machine featuring a digital display and
+              vibrant LED lighting. It offers modern styling and efficient
+              cleaning performance in a compact, futuristic design.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">5000</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </article>
+
+      <article class="sides">
+        <div>
+          <h3>Shopping Guidelines</h3>
+          <aside class="side1">
+            <p>
+              🛍️ Welcome to our store! Enjoy a smooth shopping experience.
+              <br />
+              <br />
+              🚚 Fast delivery available to all regions.
+              <br />
+              <br />
+              💳 Multiple payment methods supported (Cash on Delivery, Card).
+              <br />
+              <br />
+              🔄 Easy returns within 7 days of purchase.
+              <br />
+              <br />
+              📦 Items must be unused and in original packaging for return.
+              <br />
+              <br />
+              📞 Customer support available 24/7 for any help.
+            </p>
+          </aside>
+          <h3>Cart Summary</h3>
+          <aside class="side2">
+            <p>
+              Items in cart:
+              <span class="total_nbr_items" style="color: rgb(0, 0, 0)">0</span>
+              <br />
+              <br />
+              Total price:
+              <span class="total_price" style="color: rgb(0, 0, 0)">0</span> DA
+            </p>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <!--this is the footer-->
+
+    <footer class="footer_submit">
+      <button type="button" class="checkout">Ckeckout</button>
+    </footer>
+
+    <!--this is shopping card-->
+
+    <div class="shopping_card">
+      <div class="exit_btn">
+        <button type="button" id="exit_btn">✖️</button>
+      </div>
+      <h2>
+        List of Items:
+        <hr />
+      </h2>
+      <div class="shop_items"></div>
+    </div>
+
+    <!--js linking-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

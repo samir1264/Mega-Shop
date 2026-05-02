@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main_body">
+    <!--this is the header-->
+
+    <header>
+      <img
+        class="logo_image"
+        src="images/shopping-logo-design-template-6bc88430ababccbb7cdca0addfc44748_screen.jpg"
+        alt="logo"
+      />
+      <h1>Green Store</h1>
+    </header>
+
+    <!--this is the navbar-->
+
+    <nav>
+      <div>
+        <a href="main.html">
+          <button type="button" id="main">Main</button>
+        </a>
+        <a href="electronics.html">
+          <button type="button" id="clothing">Electronics</button>
+        </a>
+        <a href="books.html">
+          <button type="button" id="books">Books</button>
+        </a>
+      </div>
+      <button type="button" id="shopping_card_btn">🛒 shopping Cart</button>
+    </nav>
+
+    <!--this is the main-->
+
+    <main class="products_main">
+      <div class="products">
+        <h2 style="color: rgb(255, 255, 255)">Clothing</h2>
+        <article class="product_card">
+          <img src="images/OIP (7).webp" alt="" />
+          <div>
+            <h3 class="name">Classic Black Crewneck</h3>
+            <p>
+              A versatile, high-quality t-shirt made from soft, breathable
+              fabric. Featuring a tailored fit and a deep black finish, it is
+              the perfect essential for everyday comfort and layering.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">7599</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="product_card">
+          <img src="images/OIP (8).webp" alt="" width="210" />
+          <div>
+            <h3 class="name">Classic Athletic Joggers</h3>
+            <p>
+              Tapered athletic pants with a comfortable drawstring waist and
+              iconic side stripes. Designed for both performance and casual
+              style.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">9000</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="product_card">
+          <img src="images/r1.jpg" alt="" />
+          <div>
+            <h3 class="name">Nagu Performance Runners</h3>
+            <p>
+              Lightweight athletic shoes featuring breathable mesh and
+              responsive cushioning. Designed for maximum support and durability
+              during high-intensity training or daily wear.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">23500</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="product_card">
+          <img src="images/724079280f79dcf8512b14202b39f892.jpg" alt="" />
+          <div>
+            <h3 class="name">Smart Front-Load Washer</h3>
+            <p>
+              A sleek, high-tech washing machine featuring a digital display and
+              vibrant LED lighting. It offers modern styling and efficient
+              cleaning performance in a compact, futuristic design.
+            </p>
+
+            <div>
+              <ins style="color: darkgreen"
+                >Price:<span class="price">3000</span>DA</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <article class="sides">
+        <div>
+          <h3>Shopping Guidelines</h3>
+          <aside class="side1">
+            <p>
+              🛍️ Welcome to our store! Enjoy a smooth shopping experience.
+              <br />
+              <br />
+              🚚 Fast delivery available to all regions.
+              <br />
+              <br />
+              💳 Multiple payment methods supported (Cash on Delivery, Card).
+              <br />
+              <br />
+              🔄 Easy returns within 7 days of purchase.
+              <br />
+              <br />
+              📦 Items must be unused and in original packaging for return.
+              <br />
+              <br />
+              📞 Customer support available 24/7 for any help.
+            </p>
+          </aside>
+          <h3>Cart Summary</h3>
+          <aside class="side2">
+            <p>
+              Items in cart:
+              <span class="total_nbr_items" style="color: rgb(0, 0, 0)">0</span>
+              <br />
+              <br />
+              Total price:
+              <span class="total_price" style="color: rgb(0, 0, 0)">0</span> DA
+            </p>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <!--this is the footer-->
+
+    <footer class="footer_submit">
+      <button type="submit" class="checkout">Ckeckout</button>
+    </footer>
+
+    <!--this is shopping card-->
+
+    <div class="shopping_card">
+      <div class="exit_btn">
+        <button type="button" id="exit_btn">✖️</button>
+      </div>
+      <h2>
+        List of Items:
+        <hr />
+      </h2>
+      <div class="shop_items"></div>
+    </div>
+    <!--js linking-->
+    <script src="script.js"></script>
+  </body>
+</html>
